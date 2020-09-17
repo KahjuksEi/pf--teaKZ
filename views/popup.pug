@@ -1,0 +1,11 @@
+extends layout
+block content
+
+	body
+		.popup__wrapper
+			.container
+				.popup__content
+					#popup__closeBtn(onclick='closePopup()') +
+					.popup__title.main-title Ваш запрос успешно отправлен!
+					.popup__text Мы свяжемся с вами в ближайшее время!
+		script(src='script.js')

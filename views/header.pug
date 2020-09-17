@@ -1,0 +1,27 @@
+extends layout
+block content
+
+	.top-row
+			.top-row__logo
+				img(src='images/Logo.svg', alt='west line')
+			header
+				.container
+					.header__content
+						#mobileCloseBtn(onclick='closeMenu()') +
+						#mobileOpenBtn(onclick='openMenu()') ☰
+						nav#navMenu
+							ul
+								li
+									a(href='/') Главная
+								li
+									a(href='/catalog') Каталог
+								li
+									a(href='#about') О компании
+								li
+									a(href='#contacts') Контакты
+						.header__buy
+							.header__logo
+							.header__cart
+								.header__title Корзина
+								.header__items товаров
+							a(href='tel:+375250000000') Заказать звонок

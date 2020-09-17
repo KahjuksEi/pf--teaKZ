@@ -1,0 +1,61 @@
+@media(max-width:1024px){
+  .main-form__content {padding: 10%;}
+}
+@media(max-width:768px){
+.header__content{flex-direction: column;}
+header ul{flex-direction: column;width: 100%;}
+.header__buy {justify-content: center;font-family: 'RobotoBold';}
+#navMenu{display: none;}
+#mobileOpenBtn{display: block;}
+.price-form__blocks{flex-direction: column;}
+.price-form__block:nth-of-type(1){padding: 0px 0px 24px 0px;}
+.price-form__block:nth-of-type(2){margin: 0;}
+.price-form{height: auto;padding: 24px;}
+.price-form__button{overflow: hidden;} 
+.price-form__block input {width: 100%;}
+.about__blocks {flex-direction: column;padding: 24px;}
+.about__block{margin: auto;width: 100%;padding: 0;}
+.our-work__blocks{flex-direction: column;align-items: center;}
+.production__item{width: 100%;}
+.production__item-text{height: 110px;}
+.main-form{flex-direction: column;}
+.main-form__image{width: 100%;text-align: center;}
+.main-form__form{width: 100%;}
+.main-form__title{padding: 60px;}
+.main-form__text{padding:0px 0px 60px 0px}
+.bottom-header__content{overflow-y: hidden;}
+.contacts__content{flex-direction: column;padding: 24px;}
+.contacts__block{width: 100%;}
+.catalog__item {width: 43%;}
+.catalog__catname {width: 90%;}
+.popup__content{width: 96%;}
+}
+@media(max-width:684px){
+  .catalog__item {width: 100%;}
+  .catalog__params{justify-content: space-around;}
+  .catalog__name{text-align: center;}
+  .catalog__text{text-align: center;height: auto;}
+}
+@media(max-width:568px){
+  .main-image-block{height: auto;margin: 60px auto;padding: 24px;}
+  .main-image-block__text{line-height: 32px;}
+  .our-preferences {padding-top: 60px;}
+  .our-preferences__blocks{padding: 60px 0px;flex-direction: column;align-items: center;}
+  .our-preferences__item {width: 90%;}
+  .production {padding: 60px 24px;}
+  .production__item-text {height: 200px;}
+  .price-form{margin-top: 0px;}
+  .price-form__block {width: 100%;}
+  .about{padding: 60px 0px;}
+  .our-work__title {padding-top: 60px;}
+  .our-work__blocks{padding: 24px 0px 60px 0px;}
+  .contacts{padding: 60px 0px;}
+  .bottom-header__content{flex-direction: column;}
+  .bottom-header__content a {padding: 6px 40px;}
+}
+@media(max-width:380px){
+  .header__buy {justify-content: start;padding: 0px 12px;}
+  .main-image-block{font-size: 60px;line-height: 60px;}
+  .main-image-block__button {width: 100%;}
+  .production__item-text {height: 250px;}
+}

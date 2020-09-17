@@ -1,0 +1,21 @@
+extends layout
+block content
+
+  .bottom-header
+    .container
+      .bottom-header__content
+        a.bottom-header__logo(href='#')
+          img(src='images/Logo.svg', alt='west line')
+        nav
+          ul
+            li
+              a(href='/') Главная
+            li
+              a(href='/catalog') Каталог
+            li
+              a(href='#about') О компании
+        a(href='tel:+375250000000') Заказать звонок
+  footer
+    #toTop(onclick='topFunction()') Наверх
+    p Designed by Green Moon
+    p © ООО «Вектор», 2020. УНП 100500.

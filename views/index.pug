@@ -1,0 +1,142 @@
+extends layout
+block content
+
+	include header.pug
+		.container
+			.main-image-block
+				.main-image-block__title Чай из Казахстана
+				.main-image-block__text Широкий ассортимент на любой вкус
+				button.main-image-block__button(onclick="window.location.href='/catalog'") Посмотреть продукцию
+		.our-preferences
+			.container
+				.our-preferences__title.main-title Наши преимущества
+				.our-preferences__blocks
+					.our-preferences__item
+						.our-preferences__image
+						.our-preferences__text
+							| Высокое качество продукта с использыванием цельных и исключительно натуральных добавок
+					.our-preferences__item
+						.our-preferences__image
+						.our-preferences__text
+							| Работаем напрямую с производителем. У нас нет подделок или аналогов — вся продукция сертифицирована
+					.our-preferences__item
+						.our-preferences__image
+						.our-preferences__text
+							| Большой выбор позволяет Вам приобрести продукцию у нас как в розницу, так и оптом
+					.our-preferences__item
+						.our-preferences__image
+						.our-preferences__text Осуществляем быструю и надежную доставку по всей Республике Беларусь
+		.production
+			.container
+				.production__title.main-title Продукция
+				.production__text
+					| Каждая торговая марка обладает уникальными характеристиками (как качественными, так и эмоциональными), занимает собственную нишу, своё тценовое позиционирование, имеет своего потенциального потребителя. Общее у них только одно — неизменно высокое качество
+				.production__blocks
+					.production__item
+						img(src='images/tea1.png', alt='Ассам')
+						.production__item-title Ассам
+						hr
+						.production__item-text
+							| Ассамский индийский чай относится к высокосортным видам. Имеет крепость вкуса и насыщенность аромата. Составляющие ассамского чая делают его полезным напитком. В него входят антиоксиданты и дубильные вещества, кофеин и фенолы, фитоэстрогены и флавоноиды, органические кислоты и танины; витамины групп В и С, минералы и эфирные масла
+						.production__item-button(onclick="window.location.href='/catalog'") перейти в каталог
+					.production__item
+						img(src='images/tea2.png', alt='Наурыз')
+						.production__item-title Наурыз
+						hr
+						.production__item-text
+							| Учитывая достаточно богатые традиции чаепития в Казахстане компания попыталась разработать чай, который по всем своим качествам был бы «заточен» именно под казахстанского потребителя. Именно такой чай выпускается под торговой маркой «Наурыз». Он без добавок и в меру крепкий, подойдет по вкусу традиционному потребителю чая
+						.production__item-button(onclick="window.location.href='/catalog'") перейти в каталог
+					.production__item
+						img(src='images/tea3.png', alt='тенгри')
+						.production__item-title тенгри
+						hr
+						.production__item-text
+							| Тенгри — это наилучшего качества индийский и кенийский чаи высокой крепости, выполненный из высококачественного сырья, относительно своей ценовой категории. В доказательство своего отменного качества, чай Тенгри является золотым медалистом на международной выставке WorldFood в 2010 году. Имеет насыщенный вкус и аромат
+						.production__item-button(onclick="window.location.href='/catalog'") перейти в каталог
+					.production__item
+						img(src='images/tea4.png', alt='sunday')
+						.production__item-title sunday
+						hr
+						.production__item-text
+							| Сандей — это отборный кенийский чай, собранный с лучших высокогорных экологически чистых тропических плантаций. Нежный аромат, яркий насыщенный янтарный цвет, крепкий изысканный неповторимый вкус чая дарит необычайную бодрость и тонизирует. Идеально сочетается с молоком и сливками
+						.production__item-button(onclick="window.location.href='/catalog'") перейти в каталог
+		.price-form
+			.container
+				.price-form__blocks
+					.price-form__block
+						.price-form__title Посмотрите оптовый прайс-лист
+						.price-form__text Заполните форму и получите прайс-лист на почту в течение 3 минут
+					.price-form__block
+						.price-form__input
+							input(type='email', name='email', id='', placeholder='Ваш e-mail')
+						.price-form__button
+							input(type='submit', value='Отправить')
+		#about.about
+			.container
+				.about__blocks
+					.about__block
+						img(src='images/aboutTea.png', alt='teahouse')
+						.about__logo
+							img(src='images/about-logo.png', alt='teahouseLogo')
+					.about__block
+						.about__title.main-title О компании
+						.about__line
+						p
+							| Селекция бренда, безусловно, настроено позитивно. Повторный контакт обуславливает межличностный рекламный бриф. Рекламное сообщество притягивает системный анализ.
+						p
+							| Медиаплан синхронизирует из ряда вон выходящий пул лояльных изданий. Пресс-клиппинг, следовательно, экономит conversion rate, оптимизируя бюджеты. Служба маркетинга компании, анализируя результаты рекламной кампании, оправдывает популярный продуктовый ассортимент, осознав маркетинг как часть производства.
+		.our-work
+			.container
+				.our-work__title.main-title Как мы работаем
+				.our-work__blocks
+					.our-work__item
+						.our-work__item-number 01
+						.our-work__item-text Вы выбираете чай и оставляете заявку на сайте
+					.our-work__item
+						.our-work__item-number 02
+						.our-work__item-text Мы перезваниваем Вам для уточнения заказа и отвечаем на все вопросы
+					.our-work__item
+						.our-work__item-number 03
+						.our-work__item-text Оформляем доставку либо самовывоз и собираем Ваш заказ
+					.our-work__item
+						.our-work__item-number 04
+						.our-work__item-text Оплачиваете товар и получаете Ваш чай
+		.main-form
+			.main-form__image
+				.main-form__title Остались вопросы?
+				.main-form__text Оставьте свои данные и мы свяжемся с Вами в ближайшее рабочее время!
+			.main-form__form
+				.main-form__content
+					input(type='text', value='Ваше имя')
+					input(type='phone', value='Ваш телефон')
+					input(type='email', value='Ваш email')
+					textarea(name='', id='', cols='30', rows='10', placeholder='Сообщение')
+					.main-form__checkblock
+						input#checkMe(type='checkbox', checked='', name='')
+						span
+							| Согласие на обработку 
+							a(href='#') персональных данных
+					input#submitBtn(type='submit', value='Отправить')
+		#contacts.contacts
+			.container
+				.contacts__content
+					.contacts__block
+						.contacts__title.main-title Контакты
+						.about__line
+						.contacts__item
+							p.brownP Телефон
+							p +375 (29) 123-45-67
+							p.brownP E-mail
+							p info@teahouse.by
+						.contacts__item
+							p.brownP Адрес самовывоза
+							p
+								| г. Минск, ул. Притыцкого,
+								br
+								|  дом 1, офис 111
+							p.brownP Время работы
+							p Пн-Пт с 9.00 до 18.00
+					.contacts__block
+						.contacts__map
+							#map
+	include footer.pug

@@ -1,0 +1,147 @@
+extends layout
+block content
+
+	body
+		include header.pug
+		.container
+			.catalog
+				.main-title Каталог
+				.catalog__title Чай на любой вкус
+				.catalog__catname(onclick='ShowCont1()')
+					| Ассам
+					#arr1.arr >
+				#cb1.catalog__blocks
+					.catalog__item
+						img(src='images/lot1.png', alt='чай')
+						.catalog__name Ассам
+						.catalog__text Чай классический, индийский, гранулированный, премиум
+						.catalog__params
+							.catalog__mass
+								.catalog__mass-item 250г
+							.catalog__price 10BYN
+						button.catalog__buy
+							| В корзину
+							img(src='images/cart.svg')
+					.catalog__item
+						img(src='images/lot2.png', alt='чай')
+						.catalog__name Ассам
+						.catalog__text Чай листовой, индийский, черный, премиум
+						.catalog__params
+							.catalog__mass
+								.catalog__mass-item 250г
+							.catalog__price 10BYN
+						button.catalog__buy
+							| В корзину
+							img(src='images/cart.svg')
+					.catalog__item
+						img(src='images/lot3.png', alt='чай')
+						.catalog__name Ассам
+						.catalog__text Чай вечерний с бергамотом
+						.catalog__params
+							.catalog__mass
+								.catalog__mass-item 250г
+							.catalog__price 10BYN
+						button.catalog__buy
+							| В корзину
+							img(src='images/cart.svg')
+					.catalog__item
+						img(src='images/lot4.png', alt='чай')
+						.catalog__name Ассам
+						.catalog__text Чай голд, гранулированный
+						.catalog__params
+							.catalog__mass
+								.catalog__mass-item 250г
+							.catalog__price 10BYN
+						button.catalog__buy
+							| В корзину
+							img(src='images/cart.svg')
+					.catalog__item
+						img(src='images/lot5.png', alt='чай')
+						.catalog__name Ассам
+						.catalog__text Чай особый, черный, гранулированный
+						.catalog__params
+							.catalog__mass
+								.catalog__mass-item 250г
+							.catalog__price 10BYN
+						button.catalog__buy
+							| В корзину
+							img(src='images/cart.svg')
+					.catalog__item
+						img(src='images/lot6.png', alt='чай')
+						.catalog__name Ассам
+						.catalog__text Чай классический, премиум, пакетированный, 100 пак.
+						.catalog__params
+							.catalog__mass
+								.catalog__mass-item 250г
+							.catalog__price 10BYN
+						button.catalog__buy
+							| В корзину
+							img(src='images/cart.svg')
+				.catalog__catname(onclick='ShowCont2()')
+					| наурыз
+					#arr2.arr >
+				#cb2.catalog__blocks
+					.catalog__item
+						img(src='images/lot7.png', alt='чай')
+						.catalog__name Наурыз
+						.catalog__text Чай индийский, черный, гранулированный
+						.catalog__params
+							.catalog__mass
+								.catalog__mass-item 250г
+							.catalog__price 10BYN
+						button.catalog__buy
+							| В корзину
+							img(src='images/cart.svg')
+				.catalog__catname(onclick='ShowCont3()')
+					| тенгри
+					#arr3.arr >
+				#cb3.catalog__blocks
+					.catalog__item
+						img(src='images/lot8.png', alt='чай')
+						.catalog__name Тенгри
+						.catalog__text Чай индийский, гранулированный
+						.catalog__params
+							.catalog__mass
+								.catalog__mass-item 250г
+							.catalog__price 15BYN
+						button.catalog__buy
+							| В корзину
+							img(src='images/cart.svg')
+				.catalog__catname(onclick='ShowCont4()')
+					| sunday
+					#arr4.arr >
+				#cb4.catalog__blocks
+					.catalog__item
+						img(src='images/lot9.png', alt='чай')
+						.catalog__name Sunday
+						.catalog__text Чай сандэй кенийский, гранулированный
+						.catalog__params
+							.catalog__mass
+								.catalog__mass-item 250г
+							.catalog__price 15BYN
+						button.catalog__buy
+							| В корзину
+							img(src='images/cart.svg')
+		#contacts.contacts
+			.container
+				.contacts__content
+					.contacts__block
+						.contacts__title.main-title Контакты
+						.about__line
+						.contacts__item
+							p.brownP Телефон
+							p +375 (29) 123-45-67
+							p.brownP E-mail
+							p info@teahouse.by
+						.contacts__item
+							p.brownP Адрес самовывоза
+							p
+								| г. Минск, ул. Притыцкого,
+								br
+								|  дом 1, офис 111
+							p.brownP Время работы
+							p Пн-Пт с 9.00 до 18.00
+					.contacts__block
+						.contacts__map
+							#map
+	include footer.pug
